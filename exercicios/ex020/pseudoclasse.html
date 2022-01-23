@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block; /* inline-block: Coloca os blocos na mesma linha*/
+            background-color: lightgray;
+            border: 1px solid black; /*Largura da borda - Estilo da borda - Cor*/
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        /*hover é um estado que ao passar o mouse sobre um determinado elemento o mesmo sofre alterações*/
+        div:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--div é um espaço qualquer-->
+    <!--Ela usa a largura toda da tela-->
+    <!-- : (dois pontos) são pseudo-classes e estão relacionadas a um ESTADO de um determinado elemento ou uma classe-->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    <!-- Tag picture, permite criar várias fontes-->
+    <picture>
+        <!--foto-p 300x300px, foto-m 700x700px e foto-g 1000x1000px-->
+        <!-- Se o navegador tiver menos de 1050px, será carregado a imagem média (m). Se tiver tiver menos de 750px, será carregado a imagem pequena (p)-->
+        <!-- Manter sempre a ordem da foto pequena até a foto grande-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!-- autoplay toca a música automaticamente e controls mostra os controle de som-->
+    <!--Usar formatos MP3, WAV (muito pesado) e OGG-->
+    <audio src="midia/musica-1.mp3" controls autoplay></audio>
+
+        <!-- preload auto só irá considerar que o site termonou de carregar depois que varregar todo o áudio. Metadata vai carregar o algumas informações como nome do arquivo, data e duração. E None não carrega nada, é usado apenas quando o usuário clicar nos controles -->
+    <audio preload="metadata" autoplay controls loop>
+        <!--O navegador irá carregar a música na ordem,caso a primeira não abra, irá para a próxima.-->
+        <source src="midia/musica-2.mp3" type="mp3">
+        <source src="midia/musica-3.ogg" type="ogg">
+        <source src="midia/musica-4.wav" type="wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
+        <p><a href="midia/musica-2.mp3">Clique aqui para baixar o arquivo</a></p>
+
+
+    </audio>
+
+
+
+
+
+
+
+</body>
+</html>

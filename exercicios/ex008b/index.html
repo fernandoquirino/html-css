@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte/Pré formatação</h2>
+    <!--Comando CODE é uma fonte mono espaçada que facilita a leitura do código escrito em um texto-->
+    <p>O comando <code>document.getElementById ('teste')</code> é escrito em linguagem JavaScript.</p>
+    <hr>
+    <p>O comando CODE não faz a endentação do código, apenas facilita a leitura em formato de código Python.</p>
+    <!--O comando CODE não faz a endentação do código Python-->
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'0 número {num} é PAR')
+        else:
+        print(f'0 número {num} é IMPAR')
+        print('Fim do programa')
+    </code>
+    <hr>
+    <!--O comando PRE faz a endentação do código-->
+    <p>O comando PRE faz a endentação do código</p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'0 número {num} é PAR')
+            else:
+            print(f'0 número {num} é IMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <hr>
+    <!--O comando SHIFT+TAB (selecionando apenas as linhas de código, trás o mesmo para a esquerda-->
+    <p>O comando SHIFT+TAB (selecionando apenas as linhas de código, trás o mesmo para a esquerda</p>
+    <pre>
+        <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'0 número {num} é PAR')
+else:
+print(f'0 número {num} é IMPAR')
+print('Fim do programa')
+        </code>
+    </pre>
+    <hr>
+     <!--O comando TAB (selecionando apenas as linhas de código, move o mesmo para a direita-->
+     <p>O comando TAB (selecionando apenas as linhas de código, move o mesmo para a direita</p>
+     <pre>
+         <code>
+                                            num = int(input('Digite um número'))
+                                            if num % 2 == 0:
+                                                print(f'0 número {num} é PAR')
+                                            else:
+                                            print(f'0 número {num} é IMPAR')
+                                            print('Fim do programa')
+         </code>
+     </pre>
+     <hr>
+     <h2>Citações simples</h2>
+     <!--Inserir aspas em semântica-->
+     <p>Como diria o pai de amigo: <q>o computador é um burro muito rápido</q>. (Semântica)</p>
+     <h2>Citações completas</h2>
+     <!--O comando BLOCKQUOTE faz o texto deslocar para a direita-->
+     <!--O comando BLOCKQUOTE CITE é usado apenas para colar o link de onde foi citado o texto-->
+    <p>Segundo Maurício Samy Silva, no seu livro Fundamentos de HTML e CSS:</p>
+     <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html5&printsec=frontcover">Hipertexto é todo texto inserido em um documento para a web e que tem como principal característica a possibilidade de se interligar a outros documentos da web com uso dos nossos conhecidos lins, presentes nas páginas dos sites que estamos acostumados a visitar.</blockquote></p>
+
+         <h2>Abreviações - Tag ABBR</h2>
+         <!--Tag ABBR. Em title inserir significado das abreviações. Ao passar o mouse na abreviação será exibido uma caixa com o significado -->
+        <p>Estou estudando <abbr title="Hypertext Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>. Estou aprendendo muita coisa.</p>
+        
+     <h2>Texto invertido - Tag BDO</h2>
+     <!--Texto normal-->
+        <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p>
+        <!--Texto da direita para a esquerda-->
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>

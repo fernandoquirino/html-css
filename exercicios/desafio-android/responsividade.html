@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            /*Ajustar a responsividade do site*/
+            min-width: 280px; /*320px é a largura de um celular em pé*/
+            max-width: 800px;
+            margin: auto; /*main automaticamente fica no centro*/
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando responsividade</h1>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error a impedit cum, labore quaerat atque ullam alias est mollitia, adipisci ut modi sunt sint sapiente ipsum facilis deleniti at sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sapiente, quibusdam dolore fugit ad nesciunt alias dicta atque nostrum esse ipsam veniam voluptate cum distinctio eligendi vero officiis, aperiam numquam.</p>
+
+        <!--Quando o navegador estiver em uma tela maior, (acima de 600px), exibirá a imagem maior.
+        Quando diminuir a tela do navegador (abaixo de 600px, exibirá uma imagem menor)-->
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione non, exercitationem voluptate sequi temporibus laboriosam! Quibusdam quos inventore eligendi minus similique labore dicta earum provident illum nobis reprehenderit, obcaecati quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, unde! Vero, eaque quidem voluptates nam aliquid sed dolor reprehenderit odio. Mollitia, dolor totam maxime doloremque quo iusto ducimus cum quam.</p>
+    </main>
+    
+</body>
+</html>

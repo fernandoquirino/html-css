@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: darkgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            /*Sombra interna - horizontal - vertical - espalhamento - alcance maior - cor*/
+            box-shadow: inset 3px 3px 3px 1px black;
+        }
+        nav{
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 2px 2px 3px black;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 5px 5px 10px 0px black;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: grey;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 50px; /*ou 50p%*/
+
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site - Tags semânticas</h1>
+        <nav> <!--Menu de navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+<main> <!--Principal-->
+    <section id="assuntos">
+        Esportes, montanhismo e tecnologia.
+    </section>
+    <section id="noticias">
+        <article>
+            <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae corrupti distinctio deleniti culpa. Rerum libero, alias labore nemo minus enim quia necessitatibus quas voluptatibus vel neque molestiae. Perferendis, eaque cum.</p>
+            <aside> <!--aside é conteúdo relativo ao artigo-->
+                <p>Artigo escrito por José da Silva</p>
+            </aside>
+        </article>
+        <article>
+
+        </article>
+    </section>
+</main>
+<footer> <!--Rodapé-->
+    <p>Desenvolvido pelo Cursoemvideo</p>
+</footer>
+    <div id="bola"></div>
+</body>
+</html>

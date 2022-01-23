@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+<h1>Links externos</h1>
+<!--_blank abre em outra janela e rel indica que é link externo-->
+<p>Acessar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub.</a>.</p>
+<p>Acessar o <a href="https://youtube.com.br/cursoemvideo" target="_blank" rel="external">canal do youtube no GitHub.</a></p>
+
+<h1>Links internos</h1>
+<!-- rel next, indica ao mecanismo de busca que a página é a próxima página-->
+<P>Esta é a primeira página do site. Se você quiser, pode acessar também a <a href="pag002.html" rel="next" target="_self">segunda página</a>.</P>
+<!-- _self significa abrir na própria página-->
+<p>Você também pode acessar a <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a>.</p>
+
+<h1>Links para download</h1>
+<ul>
+    <!-- <a href="#">Baixar o livro em .PDF</a>, a hashtag serve para indicar apenas uml ink vazio-->
+    <!-- Para verificar extensões para download em type, acessar https://www.iana.org/assignments/media-types/media-types.xhtml  procurar PDF e copiar application.pdf-->
+    <li><a href="livro/arquivo.pdf" download="arquivo.pdf" type="application/pdf">Baixar o livro em .PDF</a></li>
+    <li><a href="livro/arquivo.rar" download="arquivo.rar">Baixar o livro em .RAR</a></li>
+</ul>
+
+</body>
+</html>

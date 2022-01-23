@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /*O asterísco abaixo significa SELETOR GLOBAL*/
+        *{
+            height: 100%;
+        }
+        /*Indicar direção: to top, to right, to bottom and to left. É possível indicar por graus (90deg)*/
+        body {
+            background-image:linear-gradient(to right,  #555ACE, #AF31AD, #DE297B, #F66830, #FECF72);
+            background-attachment: fixed; /*O degradê fica fixo*/
+            /* Usar % também para degradês:
+            background-attachment: ;background-image:linear-gradient(to right,  #555ACE 10%, #AF31AD 20%, #DE297B 30%, #F66830 20%, #FECF72 20%);*/
+
+            /* Usar % também para degradês:
+            background-attachment: ;background-image:radial-gradient(circle,  #555ACE 10%, #AF31AD 20%, #DE297B 30%, #F66830 20%, #FECF72 20%);*/
+        }
+    </style>
+</head>
+<body>
+    <H1>Testando gradiente</H1>
+</body>
+</html>
