@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+        #container{
+            position: relative; /*Todo posicionamento de um box em HTML por padrão é relativo*/
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%; /*Largura e altura*/
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo{
+            position: absolute; /*Se o posicionamento for absoluto, é possível utilizar valores da esquerda (left) e topo (top) para ajustar o conteudo*/
+            left: 50%;
+            top: 50%;
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            height: 200px;
+            background-color: yellow;
+            width: 400px;
+            /* margin: auto; Alinhamento horizontal */
+
+            /*Para centralizar o conteudo em relação ao container*/
+            transform:translate(-50%, -50%);
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <!--Para centralizar verticalmente é necessário ter as características de um 'container' e um 'conteudo'-->
+    <section id="container">
+        <article id="conteudo">
+        
+        </article>
+    </section>
+
+
+</body>
+</html>
